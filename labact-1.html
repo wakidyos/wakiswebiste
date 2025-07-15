@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SDG Registration Form</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+
+    body {
+
+      font-family: 'Verdana', sans-serif;
+
+      background: #fcefee;
+
+      margin: 0;
+
+      padding: 0;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      min-height: 100vh;
+
+    }
+
+    .form-card {
+
+      background: #fff8f0;
+
+      border-radius: 25px;
+
+      padding: 40px;
+
+      width: 90%;
+
+      max-width: 550px;
+
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+      border: 2px solid #ffb3b3;
+
+    }
+
+    h2 {
+
+      text-align: center;
+
+      color: #d94f4f;
+
+      margin-bottom: 25px;
+
+      font-size: 28px;
+
+    }
+
+    label {
+
+      display: block;
+
+      margin-top: 15px;
+
+      color: #333;
+
+      font-weight: bold;
+
+    }
+
+    input[type="text"],
+
+    input[type="email"],
+
+    input[type="number"] {
+
+      width: 100%;
+
+      padding: 10px;
+
+      margin-top: 6px;
+
+      border: 1px solid #ccc;
+
+      border-radius: 10px;
+
+      background: #fff;
+
+    }
+
+    .gender-options {
+
+      margin-top: 10px;
+
+    }
+
+    .gender-options label {
+
+      margin-right: 15px;
+
+      font-weight: normal;
+
+    }
+
+    .checkboxes {
+
+      margin-top: 10px;
+
+      background: #fff0f5;
+
+      padding: 15px;
+
+      border-radius: 10px;
+
+      max-height: 180px;
+
+      overflow-y: auto;
+
+      border: 1px dashed #ff9999;
+
+    }
+
+    .checkboxes label {
+
+      display: block;
+
+      margin: 5px 0;
+
+      font-weight: normal;
+
+    }
+
+    button {
+
+      margin-top: 20px;
+
+      width: 100%;
+
+      padding: 12px;
+
+      background-color: #d94f4f;
+
+      color: #fff;
+
+      font-size: 16px;
+
+      font-weight: bold;
+
+      border: none;
+
+      border-radius: 12px;
+
+      cursor: pointer;
+
+      transition: background 0.3s ease;
+
+	  text-align: center;
+
+    }
+
+    button:hover {
+
+      background-color: #b33c3c;
+
+    }
+	
+	{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Page Background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Form Container */
+form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 550px;
+}
+/* Heading */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+/* Label Styling */
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  color: #444;
+  font-weight: bold;
+}
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+/* Radio and Checkbox Layout */
+.gender-options,
+.checkboxes {
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+.gender-options label,
+.checkboxes label {
+  margin-right: 15px;
+  font-weight: normal;
+}
+/* Checkbox Container */
+.checkboxes {
+  padding: 12px;
+  background-color: #f1f8ff;
+  border: 1px dashed #90caf9;
+  border-radius: 8px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Hover Effect */
+button:hover {
+  background-color: #1565c0;
+}
+
+.lab-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF; /* Blue color */
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lab-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+</style>
+</head>
+<body>
+<div class="form-card">
+<h2>💝Register Your SDG Interests</h2>
+<form>
+<label for="fullName">Full Name:</label>
+<input type="text" id="fullName" name="fullName" placeholder="Enter your Name" required>
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email" placeholder="Enter your Email" required>
+<label for="age">Age:</label>
+<input type="number" id="age" name="age" placeholder="Enter your Age" required>
+<label>Gender:</label>
+<div class="gender-options">
+<label for="male">Male</label>
+<input type="radio" id="male" name="gender" value="Male" required>
+<label for="female">Female</label>
+<input type="radio" id="female" name="gender" value="Female" required>
+<label for="other">Other</label>
+<input type="radio" id="other" name="gender" value="Other" required>
+</div>
+<label>SDG(s) of Interest:</label>
+<div class="checkboxes">
+<label><input type="checkbox" name="sdgs" value="No Poverty">🆘 1. No Poverty</label>
+<label><input type="checkbox" name="sdgs" value="Zero Hunger">🍽️ 2. Zero Hunger</label>
+<label><input type="checkbox" name="sdgs" value="Good Health">⚕️ 3. Good Health and Well-being</label>
+<label><input type="checkbox" name="sdgs" value="Quality Education">💡 4. Quality Education</label>
+<label><input type="checkbox" name="sdgs" value="Gender Equality">⚧ 5. Gender Equality</label>
+<label><input type="checkbox" name="sdgs" value="Clean Water">🚰 6. Clean Water and Sanitation</label>
+<label><input type="checkbox" name="sdgs" value="Clean Energy">🔋 7. Affordable and Clean Energy</label>
+<label><input type="checkbox" name="sdgs" value="Economic Growth">🌱 8. Decent Work and Economic Growth</label>
+<label><input type="checkbox" name="sdgs" value="Industry Innovation">🤝 9. Industry, Innovation and Infrastructure</label>
+<label><input type="checkbox" name="sdgs" value="Reduced Inequalities">🧑🏿🧑🏼 10. Reduced Inequalities</label>
+<label><input type="checkbox" name="sdgs" value="Sustainable Cities">🌇 11. Sustainable Cities and Communities</label>
+<label><input type="checkbox" name="sdgs" value="Responsible Consumption">🗝️ 12. Responsible Consumption and Production</label>
+<label><input type="checkbox" name="sdgs" value="Climate Action">🌍 13. Climate Action</label>
+<label><input type="checkbox" name="sdgs" value="Life Below Water">🐢 14. Life Below Water</label>
+<label><input type="checkbox" name="sdgs" value="Life on Land">🐒 15. Life on Land</label>
+<label><input type="checkbox" name="sdgs" value="Peace and Justice">🫂 16. Peace, Justice and Strong Institutions</label>
+<label><input type="checkbox" name="sdgs" value="Partnerships">🌐 17. Partnerships for the Goals</label>
+</div>
+<button type="submit">Submit</button>
+</form>
+</div>
+</body>
+<footer>
+<a href="projects.html" class="lab-button">Return to Homepage</a>
+</footer
+</html>

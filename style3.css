@@ -1,0 +1,95 @@
+/* Reset basic spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+/* 960px Grid Container */
+.container {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* FEU Colors */
+:root {
+    --feu-green: #006633;
+    --feu-gold: #ffd700;
+}
+
+/* Header */
+header {
+    background-color: var(--feu-green);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+/* Main layout */
+main {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background-color: #f6f6e3;
+    padding: 20px;
+    margin-right: 20px;
+    border-left: 5px solid var(--feu-gold);
+    border-radius: 8px;
+}
+
+.sidebar h2 {
+    color: var(--feu-green);
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: var(--feu-green);
+    font-weight: bold;
+}
+
+/* Content */
+.content {
+    width: 70%;
+    background-color: #eaf7ea;
+    padding: 20px;
+    border-left: 5px solid var(--feu-green);
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--feu-gold);
+    color: #000;
+    border-radius: 8px;
+    font-weight: bold;
+}

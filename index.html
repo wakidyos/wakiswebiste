@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Welcome to My Website</h1>
+      <nav>
+        <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+	  <a href="resume.HTML">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content container">
+    <section class="card" data-aos="fade-up">
+      <h2>About</h2>
+      <p>This website is a portfolio of my projects using HTML and CSS.</p>
+    </section>
+	
+	<section class="card profile-card" data-aos="zoom-in">
+  <div class="profile-content">
+    <img src="images/profile.jpg" alt="My Photo" class="profile-img" />
+    <div class="profile-info">
+      <h2>Jose Gerard Joaquin S. Soriano</h2>
+      <p><strong>Address:</strong> 57C Rivera Street, Baesa, Caloocan City, Barangay 163</p>
+      <p><strong>Email:</strong> 202411559@fit.edu.ph</p>
+      <p><strong>Phone:</strong> +63 916 955 1858</p>
+    </div>
+  </div>
+</section>
+
+	
+    <section class="card" data-aos="zoom-in">
+  <h2>What I Do</h2>
+  <ul>
+  
+    <li>🏀 Passionate basketball athlete with competitive experience</li>
+    <li>🥇 Represented school in inter-school tournaments</li>
+    <li>🎮 Gamer with interest in competitive and strategic play</li>
+    <li>🧠 Quick reflexes, problem-solving, and team coordination</li>
+  </ul>
+</section>
+
+
+    <section class="card" data-aos="zoom-in">
+      <h2>Featured Project</h2>
+      <p>Take a look at what I’ve created so far.</p>
+      <a class="button" href="projects.html">View All Projects</a>
+    </section>
+
+    <section class="card" data-aos="zoom-in">
+      <h2>Get in Touch</h2>
+      <p>Do you have questions or feedback?</p>
+      <a class="button" href="contact.html">Contact Me</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+	 <button id="themeToggle">🌙 Toggle Dark Mode</button>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,     // animation duration in ms
+    once: true         // animate only once
+  });
+</script>
+<script>
+  const toggleButton = document.getElementById('themeToggle');
+  toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    toggleButton.textContent =
+      document.body.classList.contains('light-mode') ? '🌙 Dark Mode' : '☀️ Light Mode';
+  });
+</script>
+
+</body>
+</html>

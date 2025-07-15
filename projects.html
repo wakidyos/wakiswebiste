@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>My Lab Projects</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+	  <a href="resume.HTML">Resume</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card" data-aos="fade-up">
+      <h2>About My Projects</h2>
+      <p>Here are some of my lab exercises and personal work done using HTML, CSS, and C++.</p>
+    </section>
+
+    <section class="project-grid">
+      <div class="card" data-aos="zoom-in">
+        <h3>Lab Activity 1</h3>
+        <p>Intro to C++ programming – variables, input/output.</p>
+        <a class="button" href="labact-1.html" target="_blank">View Lab 1</a>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Lab Activity 2</h3>
+        <p>Control structures and decision making in C++.</p>
+        <a class="button" href="labact-2.html" target="_blank">View Lab 2</a>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Lab Activity 3</h3>
+        <p>Loops, arrays, and intro to functions.</p>
+        <a class="button" href="labact-3.html" target="_blank">View Lab 3</a>
+      </div>
+    </section>
+  </main>
+
+   <footer data-aos="fade-up">
+    <p>&copy; 2025 My Website</p>
+    <button id="themeToggle">🌙 Toggle Dark Mode</button>
+  </footer>
+
+  <!-- AOS Animation Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  <script>
+  const toggleButton = document.getElementById('themeToggle');
+  toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    toggleButton.textContent =
+      document.body.classList.contains('light-mode') ? '🌙 Dark Mode' : '☀️ Light Mode';
+  });
+</script>
+</body>
+</html>
